@@ -8,9 +8,6 @@
                 <appendLineSeparator>true</appendLineSeparator>
 
                 <jsonFormatter class="ch.qos.logback.contrib.jackson.JacksonJsonFormatter">
-                    <!--
-                    <prettyPrint>true</prettyPrint>
-                     -->
                 </jsonFormatter>
             </layout>
         </encoder>

@@ -19,3 +19,5 @@ spring:
 
 spring:
   profiles: dev
+logging:
+  config: src/main/resources/logback-back.xml
