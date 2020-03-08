@@ -1,4 +1,6 @@
 ## 로그 예시
+
+https://bcho.tistory.com/1313
  
 ```sql
 {

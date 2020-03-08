@@ -26,21 +26,14 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation group: 'org.mariadb.jdbc', name: 'mariadb-java-client'
+
+    // ========================= logback json format ==============================
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
-
-    testCompile group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: '2.11.2'
-    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.9.8'
-    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.8'
-    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.9.8'
-
     testCompile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
     compile group: 'ch.qos.logback.contrib', name: 'logback-json-classic', version: '0.1.5'
     compile group: 'ch.qos.logback.contrib', name: 'logback-jackson', version: '0.1.5'
-
-//    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.7.4'
-//    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.7.4'
-//    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.7.4'
+    // ==========================================================================
 
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
